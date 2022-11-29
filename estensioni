@@ -1,0 +1,10 @@
+fun main() {
+    val list = listOf(10, 5, 7, 13, 22, 44, 51, 33, 62, 11)       //  lista
+           
+     list.filterSmaller().forEach{i -> println(i)}   //trovare i num più piccoli di ...
+  }  
+
+fun List<Int>.filterSmaller(): List<Int>{     // specificare il tipo di lista
+        return this.filter{i -> i > 33} 
+   
+  } 
